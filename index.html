@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Study Planner</h1>
+
+    <p>Keep track of your study tasks and due dates.</p>
+
+    <form>
+      <label for="task">Task</label>
+      <input type="text" id="task" name="task" placeholder="Enter a study task" required>
+
+      <label for="due-date">Due date</label>
+      <input type="date" id="due-date" name="due-date" required>
+
+      <button type="submit">Add Task</button>
+    </form>
+
+    <section aria-labelledby="tasks-heading">
+      <h2 id="tasks-heading">Your Tasks</h2>
+      <ul id="tasks-list"></ul>
+    </section>
+  </main>
+</body>
+</html>
